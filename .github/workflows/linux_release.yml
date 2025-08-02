@@ -12,7 +12,7 @@ on:
     branches:
     - 'master'
     - 'continuous-integration'
-
+  workflow_dispatch:
 defaults:
   run:
     shell: bash
