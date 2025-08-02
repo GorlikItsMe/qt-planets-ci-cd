@@ -26,7 +26,7 @@ env:
 jobs:
   build:
     # runs-on:  ubuntu-18.04
-    runs-on:  ubuntu-latest
+    runs-on:  ubuntu-20.04
 
     steps:
       - name: Checkout repo
@@ -46,7 +46,7 @@ jobs:
           setup-python: false
 
       - name: Install FUSE
-        run : sudo apt-get install libfuse2t64
+        run : sudo apt-get install libfuse2
 
       - name: Create build directory
         run:  mkdir ${{ env.SOURCE_DIR }}/build
