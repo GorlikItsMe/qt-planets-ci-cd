@@ -64,7 +64,7 @@ jobs:
           mv Qt_planets_app*.AppImage ${{ env.ARTIFACT }}          
       
       - name: Linux artefact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@master
         with:
           name: ${{ env.ARTIFACT }}
           path: ${{ env.SOURCE_DIR }}/build/${{ env.ARTIFACT }}
