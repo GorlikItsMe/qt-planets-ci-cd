@@ -13,6 +13,7 @@ on:
     - 'master'
     - 'continuous-integration'
   workflow_dispatch:
+
 defaults:
   run:
     shell: bash
@@ -43,7 +44,10 @@ jobs:
           dir:          ${{ runner.temp }}
           modules:      qtcharts qt3d
           setup-python: false
-              
+
+      - name: Install FUSE
+        run : sudo apt-get install libfuse2t64
+
       - name: Create build directory
         run:  mkdir ${{ env.SOURCE_DIR }}/build
 

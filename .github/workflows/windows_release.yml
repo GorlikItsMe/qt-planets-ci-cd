@@ -1,17 +1,18 @@
 name: Windows Release
 
 on:
-  push:
-    branches:
-      - 'master'
-      - 'continuous-integration'
-    tags:
-      - 'v*'
-  pull_request:
-    branches:
-    - 'master'
-    - 'continuous-integration'
+  # push:
+  #   branches:
+  #     - 'master'
+  #     - 'continuous-integration'
+  #   tags:
+  #     - 'v*'
+  # pull_request:
+  #   branches:
+  #   - 'master'
+  #   - 'continuous-integration'
   workflow_dispatch:
+
 defaults:
   run:
     shell: cmd
